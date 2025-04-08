@@ -1,4 +1,4 @@
-📱 # Android Project – Dropout Risk Prediction Tool
+# Android Project – Dropout Risk Prediction Tool 📱
 A predictive Android application that analyzes the risk of student dropout based on key performance indicators such as grades, attendance, fee payment status, and behavior.
 
 The system helps identify students who may be at risk and supports timely intervention through a dual-dashboard system:
