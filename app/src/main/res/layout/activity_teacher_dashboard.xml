@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".Teacher_Dashboard">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome To Teacher Dashboard"
+        android:textColor="#212121"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:background="@color/Green" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/img"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:padding="16dp">
+
+            <!-- Mark Attendance -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <ImageButton
+                    android:id="@+id/markAttendance"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:contentDescription="TODO"
+                    android:scaleType="fitXY"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/img_4"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MARK ATTENDANCE"
+                    android:textSize="16dp"
+                    android:textColor="#212121"
+                    android:layout_marginTop="4dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--Lectures-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <ImageButton
+                    android:id="@+id/lectures"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:contentDescription="TODO"
+                    android:scaleType="fitXY"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/img_10"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LECTURES"
+                    android:textSize="16dp"
+                    android:textColor="#212121"
+                    android:layout_marginTop="4dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--Fee Updates-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+                <ImageButton
+                    android:id="@+id/feeupdate"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:contentDescription="TODO"
+                    android:scaleType="fitXY"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/img_2"
+                    android:layout_gravity="center" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FEE UPDATES"
+                    android:textSize="16dp"
+                    android:textColor="#212121"
+                    android:layout_marginTop="4dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <!--Student Behaviour-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <ImageButton
+                    android:id="@+id/StudentBehaviour"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:contentDescription="TODO"
+                    android:scaleType="fitXY"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/img_5"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="STUDENT BEHAVIOUR"
+                    android:textSize="16sp"
+                    android:textColor="#212121"
+                    android:layout_marginTop="4dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--Send Alerts-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <ImageButton
+                    android:id="@+id/SendAlerts"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:contentDescription="TODO"
+                    android:scaleType="fitXY"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/img_6"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SEND ALERTS"
+                    android:textSize="16sp"
+                    android:textColor="#212121"
+                    android:layout_marginTop="4dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Grade Students-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+                <ImageButton
+                    android:id="@+id/GradeStudents"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:contentDescription="TODO"
+                    android:scaleType="fitXY"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/img_12"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GRADE STUDENTS"
+                    android:textSize="16sp"
+                    android:textColor="#212121"
+                    android:layout_marginTop="4dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--            Change Password-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+                <ImageButton
+                    android:id="@+id/ChangePassword1"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:contentDescription="TODO"
+                    android:scaleType="fitXY"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/img_8"
+                    android:layout_gravity="center" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CHANGE PASSWORD"
+                    android:textSize="16sp"
+                    android:textColor="#212121"
+                    android:layout_marginTop="4dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Logout -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+                <ImageButton
+                    android:id="@+id/Logout1"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/img_9"
+                    android:contentDescription="Logout"
+                    android:layout_gravity="center" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LOGOUT"
+                    android:textSize="16sp"
+                    android:textColor="#212121"
+                    android:layout_marginTop="4dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </GridLayout>
+    </ScrollView>
+
+</LinearLayout>
