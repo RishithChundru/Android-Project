@@ -72,9 +72,8 @@ class Dashboard : AppCompatActivity() {
 
         logout.setOnClickListener{
             val i=Intent(this,Login_Page::class.java)
-            startActivity(i)
-            finish()
             showCustomToast("LOGGED OUT SUCCESSFULLY")
+            startActivity(i)
         }
     }
     private fun showCustomToast(message: String) {

@@ -53,12 +53,10 @@ class ViewMarks : AppCompatActivity() {
                         progressBar.progress = percentage
                         innertext.text="$percentage%"
 
-
-                        // Change color based on percentage
                         val progressDrawable = progressBar.progressDrawable.mutate()
                         val color = when {
-                            percentage < 60 -> Color.RED
-                            percentage in 60..75 -> Color.YELLOW
+                            percentage < 40 -> Color.RED
+                            percentage in 40..75 -> Color.YELLOW
                             else -> Color.GREEN
                         }
                         DrawableCompat.setTint(progressDrawable, color)

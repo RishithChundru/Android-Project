@@ -45,8 +45,8 @@ class View_Fee : AppCompatActivity() {
                     val paid = user.feePaid ?: 0
                     val balance = user.balanceFee ?: 40000
                     val percentage = (paid * 100) / 40000
-                    paidText.text = "Paid Fee: ₹${user.feePaid ?: 0}"
-                    balanceText.text = "Balance Fee: ₹${user.balanceFee ?: 40000}"
+                    paidText.text = "Paid Fee: ₹${paid}"
+                    balanceText.text = "Balance Fee: ₹${balance}"
                     progressBar.progress = percentage
                 }
             }
