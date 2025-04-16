@@ -46,23 +46,17 @@ class Upload_Marks : AppCompatActivity() {
             val Percentage = percentage.text.toString().toIntOrNull()
             if (Email.isNotEmpty() && Percentage != null) {
                 lifecycleScope.launch {
-                    try {
-                        val user = dao.getUserByEmail(Email)
-                        if (user != null) {
-                            dao.updateMarksByEmail(Email, Percentage)
-                            runOnUiThread {
-                                showCustomToast("Marks Uploaded Successfully")
-                                email.text.clear()
-                                percentage.text.clear()
-                            }
-                        } else {
-                            runOnUiThread {
-                                showCustomToast("User not found!")
-                            }
-                        }
-                    } catch (e: Exception) {
+                    val user = dao.getUserByEmail(Email)
+                    if (user != null) {
+                        dao.updateMarksByEmail(Email, Percentage)
                         runOnUiThread {
-                            Toast.makeText(this@Upload_Marks, "Error: ${e.message}", Toast.LENGTH_LONG).show()
+                            showCustomToast("Marks Uploaded Successfully")
+                            email.text.clear()
+                            percentage.text.clear()
+                        }
+                    } else {
+                        runOnUiThread {
+                            showCustomToast("User not found!")
                         }
                     }
                 }
