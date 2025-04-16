@@ -29,7 +29,6 @@
             android:layout_height="24dp"
             android:layout_gravity="start"
             android:layout_marginStart="16dp"
-            android:contentDescription="TODO"
             android:src="@drawable/img_13" />
 
         <ImageView
@@ -38,7 +37,6 @@
             android:layout_height="24dp"
             android:layout_gravity="end"
             android:layout_marginStart="16dp"
-            android:contentDescription="TODO"
             android:src="@drawable/img_1" />
 
         <TextView
@@ -57,7 +55,6 @@
         android:layout_height="150dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:contentDescription="App Logo"
         android:src="@drawable/img"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

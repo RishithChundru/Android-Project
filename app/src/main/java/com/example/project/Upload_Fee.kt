@@ -45,7 +45,6 @@ class Upload_Fee : AppCompatActivity() {
             startActivity(j)
         }
 
-
         uploadButton.setOnClickListener {
             val Email = email.text.toString().trim()
             val FeePaid = feePaidNow.text.toString().toIntOrNull()
