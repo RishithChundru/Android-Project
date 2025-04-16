@@ -68,7 +68,7 @@ class Check_Risk : AppCompatActivity() {
                             sendAlert_button.visibility = View.VISIBLE
                         }
                         else{
-                            risk_status.text="STUDENT IS NOT AT RISK OF DROPUT"
+                            risk_status.text="STUDENT IS NOT AT RISK OF DROPOUT"
                             sendAlert_button.visibility=View.GONE
                         }
                     }

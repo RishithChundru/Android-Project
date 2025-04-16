@@ -6,7 +6,6 @@
     android:orientation="horizontal"
     android:gravity="center">
     <ImageView
-        android:contentDescription="TODO"
         android:src="@drawable/img"
         android:layout_width="50dp"
         android:layout_height="50dp"
