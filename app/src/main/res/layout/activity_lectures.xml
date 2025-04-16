@@ -153,7 +153,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/input_background"
         android:text="SATURDAY - MORNING - 9AM - 12AM\n
-                AFTERNOON - 1PM - 2PM"
+                      AFTERNOON - 1PM - 2PM"
         android:textColor="@color/Green"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
