@@ -15,7 +15,6 @@ import androidx.appcompat.app.AppCompatActivity
 class Dashboard : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_dashboard)
         var attendance=findViewById<ImageButton>(R.id.Attendance)
         var grades=findViewById<ImageButton>(R.id.Grades)

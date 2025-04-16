@@ -52,23 +52,17 @@ class MarkAttendance : AppCompatActivity() {
 
             if (Email.isNotEmpty() && Attendance != null) {
                 lifecycleScope.launch {
-                    try {
-                        val user = dao.getUserByEmail(Email)
-                        if (user != null) {
-                            dao.updateAttendanceByEmail(Email, Attendance)
-                            runOnUiThread {
-                                showCustomToast("Attendance uploaded")
-                                email.text.clear()
-                                attendance_percentage.text.clear()
-                            }
-                        } else {
-                            runOnUiThread {
-                                showCustomToast("User not found!")
-                            }
-                        }
-                    } catch (e: Exception) {
+                    val user = dao.getUserByEmail(Email)
+                    if (user != null) {
+                        dao.updateAttendanceByEmail(Email, Attendance)
                         runOnUiThread {
-                            Toast.makeText(this@MarkAttendance, "Error: ${e.message}", Toast.LENGTH_LONG).show()
+                            showCustomToast("Attendance uploaded")
+                            email.text.clear()
+                            attendance_percentage.text.clear()
+                        }
+                    } else {
+                        runOnUiThread {
+                            showCustomToast("User not found!")
                         }
                     }
                 }
