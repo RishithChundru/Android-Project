@@ -24,7 +24,6 @@
     <ImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:contentDescription="TODO"
         android:src="@drawable/img"
         android:layout_gravity="center"
         android:layout_marginTop="16dp" />
@@ -55,7 +54,6 @@
                     android:scaleType="fitXY"
                     android:layout_margin="8dp"
                     android:src="@drawable/img_4"
-                    android:contentDescription="Attendance"
                     android:layout_gravity="center"/>
 
                 <TextView
@@ -84,7 +82,6 @@
                     android:scaleType="fitXY"
                     android:layout_margin="8dp"
                     android:src="@drawable/img_3"
-                    android:contentDescription="Grades"
                     android:layout_gravity="center"/>
 
                 <TextView
@@ -112,7 +109,6 @@
                 android:scaleType="fitXY"
                 android:layout_margin="8dp"
                 android:src="@drawable/img_2"
-                android:contentDescription="Fees"
                 android:layout_gravity="center" />
             <TextView
                 android:layout_width="wrap_content"
@@ -139,7 +135,6 @@
                     android:scaleType="fitXY"
                     android:layout_margin="8dp"
                     android:src="@drawable/img_5"
-                    android:contentDescription="Behaviour"
                     android:layout_gravity="center"/>
 
                 <TextView
@@ -168,7 +163,6 @@
                     android:scaleType="fitXY"
                     android:layout_margin="8dp"
                     android:src="@drawable/img_6"
-                    android:contentDescription="Alerts"
                     android:layout_gravity="center"/>
 
                 <TextView
@@ -196,7 +190,6 @@
                 android:scaleType="fitXY"
                 android:layout_margin="8dp"
                 android:src="@drawable/img_7"
-                android:contentDescription="Progress"
                 android:layout_gravity="center" />
 
             <TextView
@@ -224,7 +217,6 @@
                 android:scaleType="fitXY"
                 android:layout_margin="8dp"
                 android:src="@drawable/img_8"
-                android:contentDescription="ChangePassword"
                 android:layout_gravity="center" />
             <TextView
                 android:layout_width="wrap_content"
@@ -251,7 +243,6 @@
                 android:scaleType="fitXY"
                 android:layout_margin="8dp"
                 android:src="@drawable/img_9"
-                android:contentDescription="Logout"
                 android:layout_gravity="center" />
             <TextView
                 android:layout_width="wrap_content"

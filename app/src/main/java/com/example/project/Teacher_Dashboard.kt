@@ -14,7 +14,6 @@ class Teacher_Dashboard : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_teacher_dashboard)
         val markAttendance=findViewById<ImageButton>(R.id.markAttendance)
         val lectures=findViewById<ImageButton>(R.id.lectures)
